@@ -1,0 +1,7 @@
+name: learn-github-actions
+on: [push]
+jobs:
+  testing-runner-on-aveshadev-account:
+    runs-on: [self-hosted, linux, X64, nishant, aveshadev]
+    steps:
+      - run: sudo yum install httpd -y
